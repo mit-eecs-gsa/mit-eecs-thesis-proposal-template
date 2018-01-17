@@ -1,0 +1,98 @@
+% MIT S.M. Thesis Proposal Template
+% Created by Micah Smith
+
+\documentclass{article}
+
+% *** GRAPHICS RELATED PACKAGES ***
+\usepackage[pdftex]{graphicx}
+\graphicspath{{figures/}}
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+
+% Core packages
+\usepackage{algorithmic}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{cite}
+\usepackage{url}
+\usepackage[caption=false,font=footnotesize]{subfig}
+
+% Other packages
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{cleveref}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{soul}
+\usepackage{threeparttable}
+
+% listings setup
+\usepackage{color}
+\usepackage{colortbl}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codeorange}{rgb}{0,0.1,1}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    %backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    %keywordstyle=\color{codeorange},
+    keywordstyle=\bfseries\color{blue},
+    %numberstyle=\tiny\color{codegray},
+    numberstyle=\small,
+    %stringstyle=\color{codepurple},
+    stringstyle=\color{red},
+    %basicstyle=\footnotesize\ttfamily,
+    basicstyle=\small\ttfamily,
+    breakatwhitespace=false,
+    breaklines=true,
+    %prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}}, % hook-arrow at the end of break-line
+    prebreak={\space\hbox{\textcolor{codegray}{\ensuremath{\hookleftarrow}}}},
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=4,
+    xleftmargin=5pt,
+    escapechar=@ % for manual formatting, e.g. @\\@ for manual break line
+}
+\lstset{style=mystyle}
+
+% other stuff
+\newcommand{\mydate}{January 1, 2018}
+\newcommand{\mycompletion}{May 25, 2018}
+\newcommand{\mytitle}{Your Title}
+\newcommand{\mytimeline}{\vspace{1em}\noindent\textbf{Timeline} }
+
+\author{
+    Your Name\\
+    Massachusetts Institute of Technology\\
+    \texttt{youremail@mit.edu}
+}
+
+\date{\mydate}
+
+\title{\mytitle}
+
+\begin{document}
+
+\input{titlepage}
+
+\newpage
+
+\maketitle
+
+\input{abstract}
+
+\input{intro}
+
+\input{procedure}
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
