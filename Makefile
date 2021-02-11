@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := main
 
-MAIN=SM_Thesis_Proposal
+MAIN=Thesis_Proposal
 
 help:
 	@echo "make help"
