@@ -14,5 +14,5 @@ main:
 	latexmk -bibtex -pdf $(MAIN)
 
 clean:
-	latexmk -quiet -C $(MAIN)
+	latexmk -bibtex -quiet -C $(MAIN)
 
