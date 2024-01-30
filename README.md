@@ -17,4 +17,4 @@ Thesis but should work for the Ph.D. Thesis as well by substituting values.
 
 ## Contact
 
-Micah Smith <micahs@mit.edu>
+Micah Smith <micahs@alum.mit.edu>
